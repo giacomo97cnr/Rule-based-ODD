@@ -24,7 +24,7 @@ c=1;
 %number that represents that you investigating how many FALSE NEGATIVE 
 % there are in 50 ssh histrograms from m+51
 %to m+100
-m=350
+m=350;
 for j=51+m:1:100+m
 
 for i=1:1:size(data,1)
