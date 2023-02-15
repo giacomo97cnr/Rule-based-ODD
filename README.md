@@ -9,3 +9,8 @@ This repository contains useful codes to reproduce the DNS results of the paper 
 - DNS_groupwise_MIX__p2p_ssh_FINESTRA_5000.xlsx: histograms for the gruopwise experiment considering n_s=5000
 - DNS_groupwise_MIX__p2p_ssh_FINESTRA_10000.xlsx: histograms for the gruopwise experiment considering n_s=10000
 - MI_primo_algoritmo.m: code to compute both mutual information and weighted mutual information 
+- MI_FALSI_NEG.m: code to compute false negative rate in the rule based mutual information 
+- MI_FALSI.m: code to compute false positive rate in the rule based mutual information 
+
+
+
