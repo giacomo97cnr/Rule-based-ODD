@@ -80,8 +80,8 @@ c=c+1;
 
 end
 
-min(mediainfo);
-max(mediainfo);
+min(mediainfo)
+max(mediainfo)
 
 
 %{
@@ -92,7 +92,7 @@ major than one and so to avoid any issue we set it as 2
 %}
 contatore=0;
 for i=1:1:length(mediainfo)
-    if (0.9984<=mediainfo(i))&&(mediainfo(i)<=2)
+    if (0.999<=mediainfo(i))&&(mediainfo(i)<=2)
         contatore=contatore+1;
     end
 end
