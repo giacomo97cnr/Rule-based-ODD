@@ -15,4 +15,5 @@ For the other case studies (Platooning and RUL) contact us at: giacomo.debernard
 - MI_secondo_algoritmo.m: code to compute the base line of the rule based information 
 - grroup_point_wise_tri_trj_primo_algoritmo.m: code to determine the y axis of the groupwise plot (mutual and weighted mutual information) in the case of n_s=5000 and n_s=10000
 - grroup_point_wise_tri_trj_norme.m: code to determine the y axis of the groupwise plot (l1 norm) in the case of n_s=5000 and n_s=10000
-- importance_of_the_weigths_in the_rule_based_indormation_algorithm.xlsx: code to understand the role of the weights in the rule based inbìnformation algorithm 
+- importance_of_the_weigths_in the_rule_based_indormation_algorithm.xlsx: excel example  to understand the role of the weights in the rule based information algorithm 
+- role_of_weights_WMI_algorithm.m: code to understand the role of the weights in the weigthed mutual information algorithm 
