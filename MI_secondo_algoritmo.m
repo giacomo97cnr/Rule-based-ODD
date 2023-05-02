@@ -14,10 +14,37 @@ Load data:
 
 data=readtable("DNS_p2p_falsi.xlsx");
 data=data{:,2:end};
-data=array2table(data);
+
 
 data1=readtable("DNS_p2p_falsi.xlsx");
 data1=data1{:,2:end};
+
+
+M_rand=min(min(data(:)),min(data1(:)));
+Max_rand=max(min(data(:)),min(data1(:)));
+
+
+if M_rand~=0
+   M_rand=M_rand/1000000;
+else
+   M_rand=Max_rand/1000000;
+
+end
+
+size_1=[size(data,1),size(data,2)];
+r1 = unifrnd( M_rand, 2*M_rand,size_1);
+data=data+r1;
+
+size_2=[size(data1,1),size(data1,2)];
+r2 = unifrnd( M_rand, 2*M_rand,size_2);
+data1=data1+r2;
+
+
+
+
+
+
+data=array2table(data);
 data1=array2table(data1);
 
 
