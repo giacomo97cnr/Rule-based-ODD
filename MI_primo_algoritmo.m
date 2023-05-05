@@ -30,6 +30,28 @@ data1=array2table(data1);
 in this section we compute the baseline using 50 training histograms
 and we obtain minimum (minimo=min(mi34)) and maximum (massimo=max(mi34))
 %}
+
+ix34=[1:50];
+iy34=[1:50];
+
+for i=1:length(ix34)
+    hitx=data{:,ix34(i)};
+    for j=i:1:length(ix34)
+        
+         hity=data{:,iy34(j)};
+         mi34(i,j)=mutual_info(hitx,hity,size(data,1));
+     end
+end
+  
+
+minimo=min(mi34(:));
+massimo=max(mi34(:));
+
+
+
+
+
+%{
 ix34=[1:50];
 iy34=[1:50];
 contatore=0;
@@ -39,7 +61,7 @@ for i=1:length(ix34)
         for j=i+1:1:50
         contatore=contatore+1;
          hity=data{:,iy34(j)};
-         mi34(contatore)=mutual_info(hitx,hity,size(data,1));
+         mi34(i,j)=mutual_info(hitx,hity,size(data,1));
         end
     end
     if i==50
@@ -48,8 +70,12 @@ for i=1:length(ix34)
 end
 
 
-minimo=min(mi34);
-massimo=max(mi34);
+minimo=min(mi34(:));
+massimo=max(mi34(:));
+%}
+
+
+
 
 
 %%
