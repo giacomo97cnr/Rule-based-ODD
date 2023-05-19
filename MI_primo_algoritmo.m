@@ -83,12 +83,13 @@ massimo=max(mi34(:));
 we compute the FPR and FNR and we also obtain minimum
 (minimo_op=min(MImatrix(:))) and maximum (massimo_op=max(MImatrix(:)))
 operational range. 
-if you chose to investigate FPR ypu need to take somma1/50*50
-while for the FNR you need to take (2500-somma1)/50*50
+check somma_2 with number of splits of operational both for fpr and fnr 
 %}
+
 
 ix=ix34;
 somma1=0;
+somma2=0;
 for k=1:50
     for i=1:length(ix)
            
@@ -106,6 +107,9 @@ for k=1:50
             
                 
             
+    end
+    if somma1> fix (size(data,2)/2)  
+        somma2=somma2+1;
     end
     
 end
