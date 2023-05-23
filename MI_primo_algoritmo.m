@@ -91,6 +91,7 @@ ix=ix34;
 somma1=0;
 somma2=0;
 for k=1:50
+    somma1=0;
     for i=1:length(ix)
            
             hitx=data{:,ix(i)};
